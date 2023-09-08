@@ -14,4 +14,8 @@ Or just run the .jar file and follow the tips.
 
 Java >= 11
 
-Thanks: [Console progress bar by antivoland](https://github.com/antivoland/console-progress-bar)
+Thanks: 
+
+[Console progress bar by antivoland](https://github.com/antivoland/console-progress-bar)
+
+[jsoup: Java HTML Parser](https://jsoup.org/)

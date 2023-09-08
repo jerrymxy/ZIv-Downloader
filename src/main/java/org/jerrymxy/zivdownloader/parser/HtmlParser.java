@@ -118,7 +118,7 @@ public class HtmlParser {
 
             // Split links
             for (int i = 3; i < trs.size(); ++i) {
-                System.out.print("[" + (i - 2) + "/" + (trs.size() - 2) + "] ");
+                System.out.print("[" + (i - 2) + "/" + (trs.size() - 3) + "] ");
                 Element currentElement = trs.get(i);
                 Element eleA = currentElement.getElementsByTag("strong").first().child(0);
 
