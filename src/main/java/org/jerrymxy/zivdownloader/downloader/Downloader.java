@@ -118,7 +118,7 @@ public class Downloader {
                 sb.append(ele).append("/");
             }
         }
-        if (!sb.isEmpty()) {
+        if (sb.length() > 0) {
             sb.deleteCharAt(sb.length() - 1);
         }
         return prefix.substring(0, slashIndex + 1) + encodeUrl(sb.toString());

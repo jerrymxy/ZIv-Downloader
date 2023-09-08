@@ -4,29 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="641fb13f-5feb-4463-a84a-1a9946613593" name="变更" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jerrymxy/zivdownloader/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jerrymxy/zivdownloader/downloader/Downloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jerrymxy/zivdownloader/parser/HtmlParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jerrymxy/zivdownloader/utils/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/jerrymxy/zivdownloader/AppTest.java" afterDir="false" />
+    <list default="true" id="aaacae52-9bba-4fce-ae99-e8a04c348510" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jerrymxy/zivdownloader/utils/Globals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jerrymxy/zivdownloader/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jerrymxy/zivdownloader/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jerrymxy/zivdownloader/downloader/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jerrymxy/zivdownloader/downloader/Downloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jerrymxy/zivdownloader/parser/HtmlParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jerrymxy/zivdownloader/parser/HtmlParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,13 +27,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jerrymxy"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jerrymxy&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -55,22 +46,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="C:\envs\maven-repository" />
-        <option name="mavenHome" value="C:/envs/apache-maven-3.8.6" />
-        <option name="userSettingsFile" value="C:\envs\apache-maven-3.8.6\conf\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="2" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2UCQWD2vYIIX8WiIptTzOUXf458" />
+  <component name="ProjectId" id="2UtOiRo3nVm9h8GNfxLZZTzRq3M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -80,114 +59,53 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Code/ZIv-Downloader",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/Code/ZIv-Downloader/pom.xml",
     "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="应用程序.App">
-    <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="RunManager" selected="应用程序.Auto">
+    <configuration name="App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.jerrymxy.zivdownloader.App" />
       <module name="ZIv-Downloader" />
-      <option name="PROGRAM_PARAMETERS" value="https://zenius-i-vanisher.com/v5.2/viewsimfilecategory.php?categoryid=1580 E:/ZeniusDownloader" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="With Proxy" type="Application" factoryName="Application">
+    <configuration name="Auto" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.jerrymxy.zivdownloader.App" />
       <module name="ZIv-Downloader" />
-      <option name="VM_PARAMETERS" value="-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=7890" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest.testConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ZIv-Downloader" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.jerrymxy.zivdownloader.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.jerrymxy.zivdownloader" />
-      <option name="MAIN_CLASS_NAME" value="org.jerrymxy.zivdownloader.AppTest" />
-      <option name="METHOD_NAME" value="testConnection" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest.testDownload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ZIv-Downloader" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.jerrymxy.zivdownloader.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.jerrymxy.zivdownloader" />
-      <option name="MAIN_CLASS_NAME" value="org.jerrymxy.zivdownloader.AppTest" />
-      <option name="METHOD_NAME" value="testDownload" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest.testEncoder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ZIv-Downloader" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.jerrymxy.zivdownloader.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.jerrymxy.zivdownloader" />
-      <option name="MAIN_CLASS_NAME" value="org.jerrymxy.zivdownloader.AppTest" />
-      <option name="METHOD_NAME" value="testEncoder" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PROGRAM_PARAMETERS" value="https://zenius-i-vanisher.com/v5.2/viewsimfilecategory.php?categoryid=1580 E:\ZeniusDownloader" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AppTest.testConnection" />
-      <item itemvalue="JUnit.AppTest.testDownload" />
-      <item itemvalue="JUnit.AppTest.testEncoder" />
       <item itemvalue="应用程序.App" />
-      <item itemvalue="应用程序.With Proxy" />
+      <item itemvalue="应用程序.Auto" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.AppTest.testDownload" />
-        <item itemvalue="JUnit.AppTest.testConnection" />
-        <item itemvalue="JUnit.AppTest.testEncoder" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="641fb13f-5feb-4463-a84a-1a9946613593" name="变更" comment="" />
-      <created>1692441113431</created>
+      <changelist id="aaacae52-9bba-4fce-ae99-e8a04c348510" name="更改" comment="" />
+      <created>1693755537466</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1692441113431</updated>
-      <workItem from="1693559871229" duration="7463000" />
-      <workItem from="1693615047494" duration="13565000" />
-      <workItem from="1693703695776" duration="18730000" />
+      <updated>1693755537466</updated>
+      <workItem from="1693755539758" duration="61000" />
+      <workItem from="1693755603983" duration="648000" />
+      <workItem from="1694179337460" duration="3986000" />
     </task>
     <servers />
   </component>
@@ -206,11 +124,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <MESSAGE value="Merge branch 'main' of https://github.com/jerrymxy/ZIv-Downloader" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

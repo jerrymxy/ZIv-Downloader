@@ -1,6 +1,8 @@
 package org.jerrymxy.zivdownloader.parser;
 
+import org.jerrymxy.zivdownloader.downloader.Downloader;
 import org.jerrymxy.zivdownloader.utils.Utils;
+import org.jerrymxy.zivdownloader.utils.Globals;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -25,7 +27,7 @@ public class HtmlParser {
             System.out.println("URL not valid. Please check.");
             System.exit(0);
         }
-        this.simfileQueue = new LinkedList<List<String>>();
+        this.simfileQueue = new LinkedList<>();
     }
 
     public String getSongPackName() {
@@ -61,7 +63,7 @@ public class HtmlParser {
         Elements headertop = document.getElementsByClass("headertop");
         Elements h1 = headertop.first().getElementsByTag("h1");
         this.songPackName = h1.text();
-
+        System.out.println("Got category: " + songPackName);
         // Split content
         Elements content = document.getElementsByClass("content");
 
@@ -71,15 +73,14 @@ public class HtmlParser {
             Elements trs = table.getElementsByTag("tr");
 
             // Print current info
-//            System.out.print(trs.first().getElementsByTag("h2").first().html());
-//            System.out.print(": ");
-//            System.out.println(trs.get(1).child(0).html());
+            System.out.print(trs.first().getElementsByTag("h2").first().html());
+            System.out.print(": ");
+            System.out.println(trs.get(1).child(0).html());
 
             // Split links
-            System.out.println("Processing simfile list...");
             for (int i = 3; i < trs.size(); ++i) {
                 Element currentElement = trs.get(i);
-
+                System.out.println(i);
                 Element eleA = currentElement.getElementsByTag("strong").first().child(0);
                 // Simfile ID: sim + xxxx(numbers)
                 String simfileID = eleA.attr("id").substring(2);
@@ -90,6 +91,43 @@ public class HtmlParser {
             }
         }
         return this.simfileQueue;
+    }
+
+    public void parseAndDownloadCategoryUrl() throws IOException {
+        // GET method
+        System.out.println("Connecting...");
+        Document document = Jsoup.connect(this.categoryUrl).get();
+
+        // Get category name
+        Elements headertop = document.getElementsByClass("headertop");
+        Elements h1 = headertop.first().getElementsByTag("h1");
+        this.songPackName = h1.text();
+        System.out.println("Got category: " + songPackName);
+        // Split content
+        Elements content = document.getElementsByClass("content");
+
+        // Get tables
+        Elements tables = content.first().getElementsByTag("table");
+        for (Element table : tables) {
+            Elements trs = table.getElementsByTag("tr");
+
+            // Print current info
+            System.out.print(trs.first().getElementsByTag("h2").first().html());
+            System.out.print(": ");
+            System.out.println(trs.get(1).child(0).html());
+
+            // Split links
+            for (int i = 3; i < trs.size(); ++i) {
+                System.out.print("[" + (i - 2) + "/" + (trs.size() - 2) + "] ");
+                Element currentElement = trs.get(i);
+                Element eleA = currentElement.getElementsByTag("strong").first().child(0);
+
+                String simfileUrl = Globals.URL_PREFIX +  parseZipUrl(eleA.attr("href"));
+                String simfileTitle = eleA.attr("title");
+                Downloader downloader = new Downloader(simfileUrl, simfileTitle, Globals.PATH + "/" + songPackName);
+                downloader.download();
+            }
+        }
     }
 
     public String parseZipUrl(String simfileUrl) throws IOException {
