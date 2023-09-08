@@ -5,7 +5,7 @@ Download simfiles pack from ZIv / Zenius-I-vanisher.com
 ## Usage
 
 ```
-./ZIv-Downloader.jar [url] [path]
+java -jar ZIv-Downloader.jar [url] [path]
 ```
 
 Or just run the .jar file and follow the tips.
